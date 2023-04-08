@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+    color: gray;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    column-gap: 15px;
+    margin: 20px 150px 20px 150px;
+}
+
+#title{
+    font-weight: 300;
+    color: rgb(70, 69, 69);
+}
+
+#title2{
+  color: rgb(70, 69, 69);
+}
+
+#p-header{
+    text-align: center;
+    font-weight: 300;
+    font-size:0.9em;
+    margin-top: 10px;
+}
+
+figure{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.img{
+    height: 40px;
+}
+
+.card{
+    border-radius: 5px;
+    background-color: hsl(0, 0%, 98%);
+    padding: 15px;
+    height: 200px;
+    color: grey;
+    box-shadow: 2px 10px 10px #88888885;
+}
+
+.card p{
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.card h2{
+    font-size: 1.1em;
+}
+
+.supervisor{
+    border-top: 4px solid cyan;
+    margin-top: 100px;
+}
+
+.team-builder{
+    border-top: 4px solid red;
+}
+
+.karma{
+    border-top: 4px solid orange;
+    margin-top: 15px;
+}
+
+.calculator{
+    border-top: 4px solid darkblue;
+    margin-top: 100px;
+}
+
+@media screen and (max-width:650px) {
+    
+    #title{
+        font-size: 1.5em;
+    }
+
+    #title2{
+        font-size: 1.5em;
+    }
+    
+    main{
+        grid-template-columns: 1fr;
+        row-gap: 25px;
+        margin: 30px 30px 10px 30px;
+    }
+
+    .supervisor{
+        margin-top: 20px;
+    }
+
+    .calculator{
+        margin-top: 5px;
+    }
+    
+
+}
